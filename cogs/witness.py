@@ -56,7 +56,7 @@ class Witness(commands.Cog):
                 title="Resultado de la verificación",
                 color=discord.Color.green() if "Aprobado" in status_text else discord.Color.red()
             )
-            embed.add_field(name="Estado", value=status_text + " " +
+            embed.add_field(name="Estado", value=status_text + " - " +
                             userhive, inline=False)
             embed.set_footer(text="Desarrollado por alberto0607")
             if vote_link:
