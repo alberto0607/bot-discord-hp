@@ -20,9 +20,9 @@ class BotInfo(commands.Cog):
             color=discord.Color.blue()
         )
         embed.add_field(
-            name="Comandos", value=("**!witness** [testigo] [usuariohive] - Verifica el estado del usuario con respecto al testigo.\n"
-                                    "**!ping** - Envia una respuesta de conexión\n"
-                                    "**!info** - Devuelve información dellattada sobre el bot"
+            name="Comandos", value=("**$testigo** [testigo] [usuariohive] - Verifica el estado del usuario con respecto al testigo.\n"
+                                    "**$ping** - Envia una respuesta de conexión\n"
+                                    "**$info** - Devuelve información dellatada sobre el bot"
                                     ), inline=False)
         embed.add_field(name="Desarrollador",
                         value=owner_mention, inline=False)

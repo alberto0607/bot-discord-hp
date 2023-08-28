@@ -9,7 +9,7 @@ class Witness(commands.Cog):
         self.bot = bot
 
     @commands.command()
-    async def witness(self, ctx, witness, userhive):
+    async def testigo(self, ctx, witness, userhive):
         try:
             endpoint = f"https://hive.blog/@{userhive}.json"
             response = requests.get(endpoint)
