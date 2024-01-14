@@ -11,13 +11,13 @@ Sigue estos pasos para preparar y ejecutar el proyecto:
 ### Clonar con SSH:
 
 ```
-git clone git@gitlab.com:alberto0torrealba/bot-discord-hp.git
+git clone git@github.com:alberto0607/bot-discord-hp.git
 ```
 
 ### Clonar con HTTPS:
 
 ```
-git clone https://gitlab.com/alberto0torrealba/bot-discord-hp.git
+git clone https://github.com/alberto0607/bot-discord-hp.git
 ```
 2. Entra a la carpeta del proyecto:
 
