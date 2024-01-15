@@ -26,6 +26,5 @@ class Ping(commands.Cog):
             await ctx.send(f'Hello {member.name}... This feels familiar.')
         self._last_member = member
 
-# There is an error. I guess we cant async
-def setup(bot):
-    bot.add_cog(Ping(bot))
+async def setup(bot):
+    await bot.add_cog(Ping(bot))
