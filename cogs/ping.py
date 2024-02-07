@@ -9,13 +9,14 @@ class Ping(commands.Cog):
 
     @commands.Cog.listener()
     async def on_ready(self):
-        print("El bot está listo")
+        print(f"Conectado como {self.bot.user}.")
 
-    @commands.command()
+    @commands.command(name="ping", description="Muestra la latencia del bot.")
     async def ping(self, ctx):
-        await ctx.send("**Pong**")
+        latency = round(self.bot.latency * 1000)
+        await ctx.send(f"**Pong 🏓!** Tengo una latencia de {latency}ms.")
 
-    @commands.command()
+    @commands.command(name="hello", description="Muestra un saludo.")
     async def hello(self, ctx, *, member: discord.Member = None):
         """Says hello"""
         member = member or ctx.author
@@ -24,7 +25,6 @@ class Ping(commands.Cog):
         else:
             await ctx.send(f'Hello {member.name}... This feels familiar.')
         self._last_member = member
-
 
 async def setup(bot):
     await bot.add_cog(Ping(bot))

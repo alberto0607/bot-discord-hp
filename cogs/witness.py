@@ -69,6 +69,6 @@ class Witness(commands.Cog):
         except json.JSONDecodeError as e:
             await ctx.send("Ocurrió un error al procesar los datos JSON.")
 
-
 async def setup(bot):
     await bot.add_cog(Witness(bot))
+    
