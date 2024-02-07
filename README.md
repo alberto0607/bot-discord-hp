@@ -73,7 +73,11 @@ Antes, recuerda crear la instancia del bot en https://discord.com/developers/app
 ## Contribuciones
 
 Las contribuciones son bienvenidas. Si encuentras errores, mejoras o nuevas características que se puedan agregar al proyecto, no dudes en enviar una solicitud de extracción.
-También puedes dejar un comentario en mi blog, [visitar aquí.]()
+
+Recomiendo enviar los cambios o adicciones a la rama dev o a una nueva rama propuestas por ustedes.
+
+
+También puedes dejar un comentario en mi blog, [visitar aquí.](https://inleo.io/profile/alberto0607/blog)
 
 ## Licencia
 

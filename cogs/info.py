@@ -22,7 +22,11 @@ class BotInfo(commands.Cog):
         embed.add_field(
             name="Comandos", value=("**$testigo** [testigo] [usuariohive] - Verifica el estado del usuario con respecto al testigo.\n"
                                     "**$ping** - Envia una respuesta de conexión\n"
-                                    "**$info** - Devuelve información dellatada sobre el bot"
+                                    "**$info** - Devuelve información dellatada sobre el bot\n"
+                                    "**Juegos**:\n"
+                                    "**$gtn** - Juego Adivina el Número\n"
+                                    "**$roll** - Lanza el dado\n"
+                                    "**$flip** - Cara o Cruz\n"
                                     ), inline=False)
         embed.add_field(name="Desarrollador",
                         value=owner_mention, inline=False)
