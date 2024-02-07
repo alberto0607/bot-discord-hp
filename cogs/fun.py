@@ -2,6 +2,7 @@ import discord
 from discord.ext import commands
 import random
 
+
 class Fun(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
@@ -22,7 +23,7 @@ class Fun(commands.Cog):
             if guess < num:
                 await ctx.send("¡Demasiado bajo!")
             elif guess > num:
-                await ctx.send("¡Demasiado grande!")
+                await ctx.send("¡Demasiado alto!")
             else:
                 await ctx.send(f"¡Lo lograste en {guess_count} intentos!")
                 break
@@ -44,7 +45,8 @@ class Fun(commands.Cog):
     @commands.command(name="compliment", description="Da un cumplido al azar")
     async def compliment(self, ctx):
         # Code for random compliment logic
-        compliments = ["¡Lo estás haciendo genial!", "Te ves maravilloso hoy.", "Esa fue una idea realmente inteligente.", "Te aprecio.", "Tienes un corazón tan amable."]
+        compliments = ["¡Lo estás haciendo genial!", "Te ves maravilloso hoy.",
+                       "Esa fue una idea realmente inteligente.", "Te aprecio.", "Tienes un corazón tan amable."]
         recipient = ctx.author.mention
         compliment = random.choice(compliments)
 
@@ -73,6 +75,7 @@ class Fun(commands.Cog):
         quote = random.choice(quotes)
 
         await ctx.send(quote)
+
 
 async def setup(bot):
     await bot.add_cog(Fun(bot))
